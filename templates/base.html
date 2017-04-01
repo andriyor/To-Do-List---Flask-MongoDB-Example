@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    {% block style %}
+    {% endblock %}
+
+    <title>TODO with Flask</title>
+    <link rel="stylesheet" type="text/css"  href="{{ url_for('static',filename='assets/style.css')}}" >
+
+    <script src="//twemoji.maxcdn.com/1/twemoji.min.js?2.2.3"></script>
+    <script src="{{ url_for('static',filename='assets/emoji.js')}}"></script>
+</head>
+
+<body>
+<h1>ToDo Reminder</h1>
+{% block content %}
+{% endblock %}
+</body>
+
+</html>
